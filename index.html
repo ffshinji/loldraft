@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=dashboard.html">
+    
+    <title>LoL Draft Simulator - Redirecting...</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Yönlendirme sırasında ekranın beyaz kalmaması için geçici bir karartma */
+        body { background-color: #010a13; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #c8aa6e; font-family: 'Cinzel', serif; }
+        .loading-msg { text-align: center; }
+    </style>
+</head>
+
+<body>
+    <div class="loading-msg">
+        <img src="https://i.hizliresim.com/h701fas.jpg" style="width: 80px; border-radius: 8px; margin-bottom: 20px;" alt="FF">
+        <p>YÜKLENİYOR...</p>
+    </div>
+
+    <div id="app" style="display:none;">
+        </div>
+
+    <script>
+        // Meta refresh bazen bazı tarayıcılarda takılabilir, JS ile sağlama alıyoruz:
+        window.location.href = "dashboard.html";
+    </script>
+</body>
+</html>
